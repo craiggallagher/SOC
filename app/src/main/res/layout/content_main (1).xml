@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="saveourcar.soc.MainActivity"
+    android:background="@drawable/bg">
+
+    <!-- Main section -->
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="580dp"
+        android:layout_height="fill_parent" >
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="219dp"
+            android:layout_height="110dp"
+            android:id="@+id/imageView"
+
+            android:src="@drawable/applogo"
+            android:layout_gravity="top|center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+android:layout_marginTop="140dp"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="What's your Issue"
+
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <!-- To join the mechanic button with the image -->
+    <LinearLayout
+        android:id="@+id/list_item"
+        android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mechanic" />
+
+        <Button
+            android:id="@+id/pickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="46.24"
+            android:background="@drawable/curvebutton"
+            android:lines="1"
+            android:text="@string/broke_down"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <!-- To join the AA Twitter feed button with the image -->
+    <LinearLayout
+        android:id="@+id/list_item2"
+        android:layout_width="580dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@+id/list_item"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/aa" />
+
+        <Button
+            android:id="@+id/btn_twitter_stream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="46.24"
+            android:background="@drawable/curvebutton"
+            android:lines="1"
+            android:text="@string/aa"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item3"
+        android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/list_item2"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera" />
+
+        <Button
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="46.24"
+            android:background="@drawable/curvebutton"
+            android:lines="1"
+            android:text="@string/camera"
+            android:textColor="#ffffff"
+            android:onClick="onClickbtnCamera" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/list_item4"
+        android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/list_item3"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/insurance" />
+
+        <Button
+            android:id="@+id/insurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="46.24"
+            android:background="@drawable/curvebutton"
+            android:lines="1"
+            android:text="@string/insurance"
+            android:textColor="#ffffff"
+            android:onClick="onClickbtnInsurance" />
+
+    </LinearLayout>
+    <!-- To join the Close button with the image -->
+    <LinearLayout
+        android:id="@+id/list_Close"
+        android:layout_width="580dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/list_item4"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="46.24"
+            android:background="@drawable/curvebutton"
+            android:lines="1"
+            android:text="@string/close"
+            android:textColor="#ffffff"
+            android:onClick="onClickbtnClose" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView"
+        android:layout_below="@+id/list_Close"
+         />
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/textView"
+    android:id="@+id/textView2"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/textView4"
+        android:textColor="@color/cyan"
+
+        android:onClick="onClickNumber"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:id="@+id/textView3"
+        />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

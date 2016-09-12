@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="saveourcar.soc.Instructions">
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="580dp"
+        android:layout_height="fill_parent" >
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="580dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dip"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="27dp"
+            android:text="@string/instructions"/>
+        <LinearLayout
+            android:id="@+id/list_item9"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@+id/list_item"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+
+            android:background="#26BFDA" >
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/flat" />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="#ffffff"
+                android:text="@string/flat"/>
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:onClick="onClickTire"
+                android:src="@drawable/nextarrow" />
+
+            <!-- Put line under text -->
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+        <LinearLayout
+            android:id="@+id/list_item10"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@+id/list_item9"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:background="#26BFDA" >
+
+
+
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/oil" />
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="#ffffff"
+                android:text="@string/oil"/>
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:onClick="onClickOil"
+
+                android:src="@drawable/nextarrow" />
+
+            <!-- Put line under text -->
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+            <LinearLayout
+                android:id="@+id/list_item11"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_below="@+id/list_item10"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:background="#26BFDA" >
+
+
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/windsheild" />
+
+                <TextView
+                    android:id="@+id/TextView10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:textColor="#ffffff"
+                    android:text="@string/wind"/>
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClickwind"
+                    android:src="@drawable/nextarrow" />
+
+                <!-- Put line under text -->
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+
+            <LinearLayout
+                android:id="@+id/list_item12"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_below="@+id/list_item11"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:background="#26BFDA" >
+
+
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/battery" />
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:textColor="#ffffff"
+                    android:text="@string/battery"/>
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClickJump"
+                    android:src="@drawable/nextarrow" />
+
+                <!-- Put line under text -->
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+
+
+            <LinearLayout
+                android:id="@+id/list_item13"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_below="@+id/list_item11"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:background="#26BFDA" >
+
+
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/fuel" />
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="21sp"
+                    android:textColor="#ffffff"
+                    android:text="@string/fuel"/>
+                <ImageView
+                    android:layout_width="51dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:onClick="onClickFuel"
+                    android:src="@drawable/nextarrow" />
+
+                <!-- Put line under text -->
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0" />
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
